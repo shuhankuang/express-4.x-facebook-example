@@ -11,9 +11,9 @@ var Strategy = require('passport-facebook').Strategy;
 // with a user object, which will be set at `req.user` in route handlers after
 // authentication.
 passport.use(new Strategy({
-    clientID: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: 'http://localhost:3000/login/facebook/return'
+    clientID: '355697818182465',
+    clientSecret: 'fd8f8e1986a4ff2d0cc1ddb0903cd81b',
+    callbackURL: 'https://emails-8080.herokuapp.com/login/facebook/return'
   },
   function(accessToken, refreshToken, profile, cb) {
     // In this example, the user's Facebook profile is supplied as the user
